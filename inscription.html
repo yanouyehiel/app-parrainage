@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrainage 3IAC 2022 - Enregistrement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="inscription">
+
+
+        <div class="right">
+            <h3>Ajouter vos informations</h3>
+            <form action="inscription.php" method="post" enctype="multipart/form-data">
+                <div class="soumetre">
+                    <input type="text" name="email" placeholder="Email" required>
+                </div>
+                <div class="soumetre">
+                    <div class="soumetre1">
+                        <div>
+                            <input type="text" name="tel" placeholder="Numéro" required>
+                        </div>
+                        <div class="soumetre2">
+                            <input type="file" name="photo" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="soumetre">
+                    <div class="soumetre1">
+                        <div>
+                            <div class="soumetre3">
+                                <select name="filiere" id="select" required>
+                                    <option value="">Filiere</option>
+                                    <option value="GL">GL</option>
+                                    <option value="RS">RS</option>
+                                    <option value="IWD">IWD</option>
+                                    <option value="GSI">GSI</option>
+                                    <option value="MSI">MSI</option>
+                                    <option value="TEL">TEL</option>
+                                    <option value="ECMN">ECMN</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="soumetre2">
+                            <select name="niveau" id="select" required>
+                                <option value="">Niveau</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+              
+
+                <button type="submit" name="update">Valider</button>
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
